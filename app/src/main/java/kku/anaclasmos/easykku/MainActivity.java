@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);     //Ctrl + คลิกสีฟ้า จะวาร์ปไปหน้านั้นๆ
 
         //Bind Widget
-        signInButton = (Button) findViewById(R.id.button3);    //Alt + enter  >> cast = ใส่วงเล็บออโต้
-        signUpButton = (Button) findViewById(R.id.button2);
+        signInButton = (Button) findViewById(R.id.button2);    //Alt + enter  >> cast = ใส่วงเล็บออโต้
+        signUpButton = (Button) findViewById(R.id.button3);
 
 
         // Sign Up Controller
