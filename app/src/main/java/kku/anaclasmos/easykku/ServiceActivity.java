@@ -2,6 +2,8 @@ package kku.anaclasmos.easykku;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class ServiceActivity extends AppCompatActivity {
@@ -28,6 +30,17 @@ public class ServiceActivity extends AppCompatActivity {
         MyAdapter myAdapter = new MyAdapter(ServiceActivity.this, nameStrings, phoneStrings, imageStrings);
         listView.setAdapter(myAdapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                confirmCall(nameStrings[position], phoneStrings[position]);
+            }   //on item click
+        });
+
 
     }   //Main Method
+
+    private void confirmCall(String nameString, String phoneString) {
+
+    }
 }       //Main Class
